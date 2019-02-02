@@ -1,0 +1,38 @@
+{
+    "name": "hovsepyan/lara-autoswag",
+    "description": "Auto generates the swagger documentation for a laravel project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Karen Hovsepyan",
+            "email": "karen@gisher.am"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "~3.0",
+        "phpunit/phpunit": "6.*"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Hovsepyan\\LaravelSwagger\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hovsepyan\\LaravelSwagger\\Tests\\": "tests/"
+        }
+    },
+    "suggest": {
+        "ext-yaml": "Required to use the YAML output option"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hovsepyan\\LaravelSwagger\\SwaggerServiceProvider"
+            ]
+        }
+    }
+}
