@@ -6,6 +6,8 @@ It will take into account wether the request is a GET/HEAD/DELETE or a POST/PUT/
 
 ## Installation
 
+Before use this package please install https://github.com/DarkaOnLine/L5-Swagger swagger for laravel :)
+
 The package can easily be installed by running `composer require hovsepyan/lara-autoswag` in your project's root folder.
 
 If you are running a version of Laravel < 5.5 also make sure you add `Hovsepyan\LaravelSwagger\SwaggerServiceProvider::class` to the `providers` array in `config/app.php`.
